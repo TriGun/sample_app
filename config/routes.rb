@@ -1,7 +1,4 @@
 SampleApp::Application.routes.draw do
-  #get "pages/home"
-  #get "pages/contacts"
-  #get "pages/about"
   match '/contacts', :to => 'pages#contacts'
   match '/about', :to => 'pages#about'
   match '/help', :to => 'pages#help'

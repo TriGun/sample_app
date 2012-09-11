@@ -1,9 +1,10 @@
 <div class="navbar navbar-inverse navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
-      <%= image_tag "rails.png", :alt => 'rails_logo', :class => 'pull-right img-polaroid', :style => 'margin: 3px' %>
-      <%= link_to "Home", '#', :class => "brand" %>
-      <%= link_to "Help", '#', :class => "brand"  %>
+      <% logo = image_tag("rails.png", :alt => 'rails_logo', :class => 'pull-right img-polaroid', :style => 'margin: 3px') %>
+      <%= link_to logo, root_path %>
+      <%= link_to "Home", root_path, :class => "brand" %>
+      <%= link_to "Help", help_path, :class => "brand"  %>
       <%= link_to "Sing in", '#', :class => "brand"  %>
     </div>
   </div>
